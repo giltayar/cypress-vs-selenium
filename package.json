@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/giltayar/testautomationu-cypress-course#readme",
   "devDependencies": {
-    "cypress": "^3.1.4"
+    "chai": "^4.2.0",
+    "cypress": "^3.1.4",
+    "mocha": "^5.2.0",
+    "selenium-webdriver": "^3.6.0"
   }
 }

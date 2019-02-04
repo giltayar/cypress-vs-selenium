@@ -1,3 +1,3 @@
-# testautomationu-cypress-course
+# Cypress vs Selenium
 
-Code used in TestAutomationU's Cypress Course
+Companion code for "Cypress vs Selenium WebDriver: Better, or just different?" talk
