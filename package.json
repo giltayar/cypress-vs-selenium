@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Code used in TestAutomationU's Cypress Course",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "cypress run",
+    "test:cypress": "cypress run",
+    "test:mocha": "mocha --no-timeouts --exit 'selenium/*.js'",
     "cypress": "cypress open"
   },
   "repository": {
@@ -20,6 +22,7 @@
   "homepage": "https://github.com/giltayar/testautomationu-cypress-course#readme",
   "devDependencies": {
     "chai": "^4.2.0",
+    "chromedriver": "^2.45.0",
     "cypress": "^3.1.4",
     "mocha": "^5.2.0",
     "selenium-webdriver": "^3.6.0"
