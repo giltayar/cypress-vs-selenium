@@ -15,18 +15,16 @@ describe('todo actions', () => {
     cy.get('.toggle').should('not.be.checked')
   })
 
-  describe('toggling todos', () => {
-    it('should toggle test correctly', () => {
-      cy.get('.toggle').click()
-      cy.get('label').should('have.css', 'text-decoration-line', 'line-through')
-    })
+  it('should toggle test correctly', () => {
+    cy.get('.toggle').click()
+    cy.get('label').should('have.css', 'text-decoration-line', 'line-through')
+  })
 
-    it('should clear completed', () => {
-      cy.get('.toggle').click()
+  it('should clear completed', () => {
+    cy.get('.toggle').click()
 
-      cy.contains('Clear completed').click()
+    cy.contains('Clear completed').click()
 
-      cy.get('.todo-list').should('not.have.descendants', 'li')
-    })
+    cy.get('.todo-list').should('not.have.descendants', 'li')
   })
 })
