@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "test:cypress": "cypress run",
-    "test:mocha": "mocha --no-timeouts --exit 'selenium/*.js'",
+    "test:selenium": "mocha --no-timeouts --exit 'selenium/*.js'",
     "cypress": "cypress open"
   },
   "repository": {
