@@ -26,19 +26,21 @@ describe('todo actions', () => {
     expect(await (await driver.findElement(By.css('.toggle'))).isSelected()).to.be.false
   })
 
-  describe('toggling todos', () => {
-    it('should toggle test correctly', async () => {
-      await (await driver.findElement(By.css('.toggle'))).click()
+  it('should toggle test correctly', async () => {
+    await (await driver.findElement(By.css('.toggle'))).click()
 
-      expect(await (await driver.findElement(By.css('label'))).getCssValue('text-decoration-line')).to.equal('line-through')
-    })
+    expect(
+      await (await driver.findElement(By.css('label'))).getCssValue('text-decoration-line'),
+    ).to.equal('line-through')
+  })
 
-    it('should clear completed', async () => {
-      await (await driver.findElement(By.css('.toggle'))).click()
+  it('should clear completed', async () => {
+    await (await driver.findElement(By.css('.toggle'))).click()
 
-      await (await driver.findElement(By.xpath('//*[text() = "Clear completed"]'))).click()
+    await (await driver.findElement(By.xpath('//*[text() = "Clear completed"]'))).click()
 
-      expect(await (await driver.findElement(By.css('.todo-list'))).findElements(By.css('li'))).to.have.length(0)
-    })
+    expect(
+      await (await driver.findElement(By.css('.todo-list'))).findElements(By.css('li')),
+    ).to.have.length(0)
   })
 })
