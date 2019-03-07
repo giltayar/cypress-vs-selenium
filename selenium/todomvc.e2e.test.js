@@ -15,7 +15,7 @@ describe('todo actions', () => {
     await driver.get('http://todomvc-app-for-testing.surge.sh/')
 
     // await driver.get('http://todomvc-app-for-testing.surge.sh/?delay-new-todo=1000')
-    // await driver.wait(until.elementLocated(By.css('.new-todo')))
+    // // await driver.wait(until.elementLocated(By.css('.new-todo')))
 
     const newTodoElement = await driver.findElement(By.css('.new-todo'))
     await newTodoElement.sendKeys('Clean room' + Key.RETURN)
