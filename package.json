@@ -21,11 +21,11 @@
   },
   "homepage": "https://github.com/giltayar/testautomationu-cypress-course#readme",
   "devDependencies": {
-    "@applitools/eyes.cypress": "^3.4.2",
+    "@applitools/eyes-cypress": "^3.9.1",
     "chai": "^4.2.0",
-    "chromedriver": "^2.45.0",
-    "cypress": "^3.1.4",
-    "mocha": "^5.2.0",
+    "chromedriver": "^79.0.0",
+    "cypress": "^3.7.0",
+    "mocha": "^6.2.2",
     "selenium-webdriver": "^3.6.0"
   }
 }
