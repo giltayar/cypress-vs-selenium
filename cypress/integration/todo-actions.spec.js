@@ -2,12 +2,12 @@
 
 describe('todo actions', () => {
   beforeEach(() => {
-    cy.visit('http://todomvc-app-for-testing.surge.sh/')
+    // cy.visit('http://todomvc-app-for-testing.surge.sh/')
 
-    cy.get('.new-todo').type('Clean room{enter}')
-
-    // cy.visit('http://todomvc-app-for-testing.surge.sh/?delay-new-todo=2000')
     // cy.get('.new-todo').type('Clean room{enter}')
+
+    cy.visit('http://todomvc-app-for-testing.surge.sh/?delay-new-todo=2000')
+    cy.get('.new-todo').type('Clean room{enter}')
   })
 
   it('should add a new todo to the list', () => {
